@@ -1,0 +1,90 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-size: 1.6rem;
+    font-family: 'Open Sans', serif;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+@media (max-width:767px) {
+    body {
+        font-size: 1.4rem;
+    }
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* -------header----- */
+
+header {
+    background-color: black;
+    height: 10vh;
+}
+
+header img {
+    height: 5rem;
+}
+
+.gridH {
+    width: 100%;
+}
+
+#navbarNav>ul {
+    width: 100%;
+}
+
+li a {
+    font-size: 2rem;
+    color: white;
+}
+
+
+/* ----jumbotron */
+
+.frontImg {
+    background-image: url(/hotel-js-starter/img/Lille-Seminaires.jpg);
+    height: 50vh;
+    position: relative;
+}
+
+.back {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.slogan {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    right: 40%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.frontImg h1 {
+    text-align: center;
+    display: block;
+}

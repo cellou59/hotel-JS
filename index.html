@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <link rel="stylesheet" href="Css/Style.css">
+    <link rel="stylesheet" href="Css/bootstrap.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container-fluid">
+                <div class="gridH row justify-content-between">
+
+                    <div class="logo col-4 ">
+                        <img src="img/Logoblanc.png" alt="">
+                    </div>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expended="false" aria>
+                        <span class="navbar-toggler-icon"></span></button>
+
+                    <div class="collapse navbar-collapse col-3  " id="navbarNav">
+                        <ul class="navbar-nav row justify-content-between">
+                            <li class="nav-item col-6 ">
+                                <a class="nav-link" id=nouveauClient href="">Nouveau client</a>
+                            </li>
+                            <li class="nav-item col-6">
+                                <a class="nav-link" id=departClient href="">Départ client</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="frontImg">
+            <div class="back">
+                <div class="container-fluid">
+                    <div class="slogan">
+                        <h1>Accueil nouveau client </h1>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="FormulaireEntré">
+            <div class="container">
+                <div class="">
+                    <form id="addCustomer">
+                        <div>
+                            <label for="inputfirstname">Votre prénom :</label>
+                            <input class="form-control name" id="inputfirstname" type="text" placeholder="Prénom" value="Cellou">
+                        </div>
+                        <div>
+                            <label for="inputlastname">Votre nom :</label>
+                            <input class="form-control lastName" id="inputlastname" type="text" placeholder="Nom" value="Phoque">
+                        </div>
+                        <div>
+                            <label for="inputNbJours">Nombre de Jour :</label>
+                            <input class="form-control NbJour" id="inputNbJours" type="text" placeholder="1" value="Phoque">
+                        </div>
+                        <div>
+                            <label for="nbChambre">Chambre :</label>
+                            <select class="form-control chambre" id="nbChambre">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                          </select>
+                        </div>
+
+                        <div>
+                            <div class="form-check">
+
+                                <input class="form-check-input dej" type="radio" name="dejeuner" id="dejeunerT" value="true" checked>
+
+                                <label class="form-check-label " for="dejeunerT">Oui</label>
+
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="dejeuner" id="dejeunerF" value="false">
+
+                                <label class="form-check-label" for="dejeunerF">
+                                    Non
+                                </label>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="submit" class="btn btn-primary mb-2 save">Enregistrer le client</button>
+                        </div>
+                        <div></div>
+                    </form>
+                </div>
+        </section>
+        <section class="">
+            <div class="backImg">
+                <img src="img/Lille-Hall.jpg" alt="">
+                <div class="container">
+                    <div>
+                        <h1>Départ client </h1>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <section class="FormulaireDépart">
+            <div class="container">
+                <form id="outCustomer">
+                    <div class="">
+
+                        <label for="inputfirstnameOut">Votre prénom :</label>
+                        <input class="form-control nameOut" id="inputfirstnameOut" type="text" placeholder="Prénom" value="Cellou">
+                    </div>
+                    <div>
+                        <label for="inputlastnameOut">Votre nom :</label>
+                        <input class="form-control lastName" id="inputlastnameOut" type="text" placeholder="Nom" value="Phoque">
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-2 search">Enregistrer le client</button>
+                </form>
+            </div>
+            </div>
+        </section>
+        <section class="payement">
+            <div class="container">
+                <div>
+                    <div>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="JS/jquery-3.4.1.min.js"></script>
+    <script src="JS/bootstrap.js"></script>
+    <script type="module" src="JS/mainH.js"></script>
+</body>
+
+=======
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Olivarius</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/Logoblanc.png">
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#newCustomer">Nouveau client</a>
+                    </li>
+                    <li>
+                        <a href="#outCustomer">Départ client</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="newCustomer">
+            <header>
+                <h2>Accueil nouveau client</h2>
+            </header>
+            <div class="container section-content">
+                <form class="booking-form" autocomplete="off">
+                    <div class="booking-form-wrapper">
+                        <div class="form-group">
+                            <label for="firstname">Prénom</label>
+                            <input type="text" placeholder="Jean" id="firstname" name="firstname">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname">Nom</label>
+                            <input type="text" placeholder="Dupont" id="lastname" name="lastname">
+                        </div>
+                        <div class="form-group">
+                            <label for="nbNuits">Nombre de nuits</label>
+                            <input type="number" placeholder="2" id="nbNuits" name="nbNuits">
+                        </div>
+                        <div class="form-group">
+                            <label for="room-select">Chambre</label>
+                            <div class="select-wrapper">
+                                <select id="room-select">
+                                    <option value="1p">Chambre 1 personne</option>
+                                    <option value="2p">Chambre 2 personnes</option>
+                                    <option value="4p">Chambre 4 personnes</option>
+                                    <option value="loft">Loft</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Petit déjeuner ?</label>
+                            <div class="radio-wrapper">
+                                <input type="radio" id="breakfastYes" name="breakfast" value="1">
+                                <label for="breakfastYes">Oui</label>
+                                <input type="radio" id="breakfastNo" name="breakfast" value="0" checked>
+                                <label for="breakfastNo">Non</label></div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn">
+                                Enregistrer le client <i class="fa fa-calendar"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="outCustomer">
+            <header>
+                <h2>Départ client</h2>
+            </header>
+            <div class="container section-content">
+                <form class="search-form" autocomplete="off">
+                    <div class="search-form-wrapper">
+                        <div class="form-group">
+                            <label for="searchFirstname">Prénom</label>
+                            <input type="text" placeholder="Jean" id="searchFirstname" name="searchFirstname">
+                        </div>
+                        <div class="form-group">
+                            <label for="searchLastname">Nom</label>
+                            <input type="text" placeholder="Dupont" id="searchLastname" name="searchLastname">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn">
+                                Rechercher <i class="fa fa-user"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="facture-client">
+                <div class="container"></div>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+
+>>>>>>> 7862d8f (fix style)
+</html>
