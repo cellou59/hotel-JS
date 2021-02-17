@@ -1,4 +1,4 @@
-import Client from './modules/Client.js';
+import Client from './Client.js';
 
 const rooms = {
     "1p": 65,

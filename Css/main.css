@@ -67,12 +67,12 @@ h2:after {
 }
 
 #newCustomer header {
-  background: url("../img/Lille-Seminaires.jpg") center center;
+  background: url(https://github.com/cellou59/hotel-js/blob/main/img/Lille-Seminaires.jpg?raw=true) center center;
   text-align: center;
   padding: 65px 0;
 }
 #outCustomer header {
-  background: url("../img/Lille-Hall-1-e1519397376805.jpg") bottom right;
+  background: url(https://github.com/cellou59/hotel-js/blob/main/img/Lille-Hall.jpg?raw=true) bottom right;
   text-align: center;
   padding: 65px 0;
 }
